@@ -42,18 +42,18 @@ void Print(int n){
 int main(){
     int v,t;
     cout<<"Enter number of vertex : ";
-	cin>>v;
-  dist.resize(v);
-	for(int i=0;i<v;i++){
+    cin>>v;
+    dist.resize(v);
+    for(int i=0;i<v;i++){
 	    
-	dist[i].resize(v);  
+    dist[i].resize(v);  
 	
-	for(int j=0;i<v;j++){
+    for(int j=0;i<v;j++){
 	   
-     	cin>>dist[i][j];
+      cin>>dist[i][j];
      	
-		}
-	}
-	Warshall(v);
-	Print(v);
+  }
+}
+   Warshall(v);
+   Print(v);
 }
